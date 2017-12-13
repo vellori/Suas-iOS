@@ -12,9 +12,9 @@ import Foundation
 /// Store that contains the application state, the reducer logic, the middleware and the listeners
 ///
 /// The store contains four components:
-/// - **state**: represents the application state. This state is partitioned into state keys. Each key can represents a full application screen, flow, or view controller.
-/// - **reducer** represents the logic to update the state. A reducer mainly provides a function that updates the state for a paticular action.
-/// - **middleware**: an object (or list of objects) that intercept an action and can enrich or alter it before finally dispatching it to the reducer.
+/// - **state**: represents the application state. This state is partitioned into state keys. Each key can represent a full application screen, flow, or view controller.
+/// - **reducer** represents the logic to update the state. A reducer mainly provides a function that updates the state for a particular action.
+/// - **middleware**: an object (or list of objects) that intercepts an action and can enrich or alter it before finally dispatching it to the reducer.
 /// - **listener**: a function that gets called when a state is changed.
 final public class Store {
 
