@@ -39,9 +39,11 @@ typealias CallbackId = String
 extension Suas {
   // For testing
   static var fatalErrorHandler: (() -> ())? = nil
+  static var enableDebugLogging: Bool = true
 
   static func log(_ string: @autoclosure () -> String) {
     #if DEBUG
+      if !enableDebugLogging { return }
       print("🔼 Suas: \(string())")
     #endif
   }
