@@ -39,7 +39,9 @@ typealias CallbackId = String
 extension Suas {
   // For testing
   static var fatalErrorHandler: (() -> ())? = nil
-  static var enableDebugLogging: Bool = true
+    
+  /// A boolean flag to disable debug logging. Defaults to true.
+  public static var enableDebugLogging: Bool = true
 
   static func log(_ string: @autoclosure () -> String) {
     #if DEBUG
